@@ -1,8 +1,4 @@
-import React from 'react'
 
-interface INewsProps {
-
-}
 
 export default function News() {
 

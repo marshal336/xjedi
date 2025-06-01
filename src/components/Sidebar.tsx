@@ -1,11 +1,8 @@
 "use client"
 import React, { ReactNode } from 'react'
 import { clans, justice, officBattles } from '@/data'
-import { Card, CardHeader, CardTitle, CardContent, Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from './ui'
+import { CardHeader, CardTitle, CardContent, Sheet, SheetContent, SheetDescription, SheetHeader, SheetTrigger } from './ui'
 import Link from 'next/link'
-import { cn } from '@/lib/utils'
-import path from 'path'
-import { headerMenuLinks } from './Header/data'
 
 interface ISidebarProps {
     className?: string
@@ -43,7 +40,7 @@ export default function Sidebar({ className, trigger }: ISidebarProps) {
                             </div>
                             <div className=" bg-[hsl(var(--grid))] text-white border-zinc-600 ">
                                 {officBattles.map(({ title, text }) => (
-                                    <div className="flex flex-col">
+                                    <div key={title} className="flex flex-col">
                                         <CardHeader className="pb-2">
                                             <CardTitle className="text-2xl text-center">{title}</CardTitle>
                                         </CardHeader>

@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from 'react'
-import styles from './Header.module.scss'
 import Image from 'next/image'
 import { headerMenuLinks } from './data'
 import Link from 'next/link'
@@ -10,12 +9,9 @@ import { Button } from '../ui'
 import { FaBell } from "react-icons/fa";
 import CustomSheet from './CustomSheet'
 
-interface IHeaderProps {
-
-}
-
-const Header: React.FC<IHeaderProps> = ({ }) => {
+const Header = ({ }) => {
     const data = usePathname()
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [tooltip, setTooltip] = useState(false)
     const [tooltiptext, setTooltipText] = useState('')
     const [login, setLogin] = useState(false)

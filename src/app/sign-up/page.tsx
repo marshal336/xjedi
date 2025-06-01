@@ -1,13 +1,8 @@
 "use client"
-import React from 'react'
-import { cn } from '@/lib/utils'
 import { Button, Input } from '@/components/ui'
 
-interface ISignUpProps {
-    className?: string
-}
 
-export default function SignUp({ className }: ISignUpProps) {
+export default function SignUp() {
 
     return (
         <form className=" max-w-[400px] mx-auto flex flex-col gap-6">

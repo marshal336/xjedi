@@ -7,7 +7,7 @@ import {
     SheetTrigger,
 } from "@/components/ui"
 import { cn } from "@/lib/utils"
-import { ReactNode, useState } from "react"
+import { ReactNode } from "react"
 import { headerMenuLinks } from "./data"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
